@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView txtView = (TextView)findViewById(R.id.mainActivityTextView);
-        txtView.setText("Hello Progmob 2020 !");
+        txtView.setText(R.string.text_hello_world);
     }
 }
