@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tes_constraint_layout);
+        setContentView(R.layout.activity_main);
 
-       /* //variabel
+        //variabel
         final TextView txtView = (TextView)findViewById(R.id.mainActivityTextView);
         Button btnTombol = (Button)findViewById(R.id.tombol);
         final EditText txtNama = (EditText)findViewById(R.id.namePerson);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
+        Button btnTracker = (Button)findViewById(R.id.btnTracker);
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -44,6 +45,19 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        });*/
+        });
+
+        btnTracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TrackerActivity.class);
+                Bundle b = new Bundle();
+
+                b.putString("tracker_string", txtNama.getText().toString());
+                intent.putExtras(b);
+
+                startActivity(intent);
+            }
+        });
     }
 }
