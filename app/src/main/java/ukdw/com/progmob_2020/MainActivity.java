@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import ukdw.com.progmob_2020.Materi3.ListActivity;
+import ukdw.com.progmob_2020.Materi3.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,5 +75,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnRecycler.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                startActivity(intent);
+            }
+        }
+        );
     }
 }
