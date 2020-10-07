@@ -8,7 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import ukdw.com.progmob_2020.Materi3.ListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         final EditText txtNama = (EditText)findViewById(R.id.namePerson);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
         Button btnTracker = (Button)findViewById(R.id.btnTracker);
+        Button btnRecycler = (Button)findViewById(R.id.btnRecyler);
+        Button btnList = (Button)findViewById(R.id.btnList);
+        Button btnCard = (Button)findViewById(R.id.btnCard);
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -57,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtras(b);
 
                 startActivity(intent);
+            }
+        });
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+
             }
         });
     }
