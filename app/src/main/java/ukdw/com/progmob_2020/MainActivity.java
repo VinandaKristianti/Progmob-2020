@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnRecycler = (Button)findViewById(R.id.btnRecyler);
         Button btnList = (Button)findViewById(R.id.btnList);
         Button btnCard = (Button)findViewById(R.id.btnCard);
+        Button btnPertemuan = (Button)findViewById(R.id.btnPertemuan);
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -91,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnPertemuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ukdw.com.progmob_2020.Pertemuan4.DebuggingActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
