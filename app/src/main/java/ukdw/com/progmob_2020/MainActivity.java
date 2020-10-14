@@ -12,6 +12,7 @@ import android.widget.TextView;
 import ukdw.com.progmob_2020.Materi3.ListActivity;
 import ukdw.com.progmob_2020.Materi3.RecyclerActivity;
 import ukdw.com.progmob_2020.Materi3.cardviewtest_activity;
+import ukdw.com.progmob_2020.Pertemuan4.DebuggingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -95,11 +96,10 @@ public class MainActivity extends AppCompatActivity {
         btnPertemuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ukdw.com.progmob_2020.Pertemuan4.DebuggingActivity.class);
+                Intent intent = new Intent(MainActivity.this, DebuggingActivity.class);
                 startActivity(intent);
             }
         });
-
     }
 
 

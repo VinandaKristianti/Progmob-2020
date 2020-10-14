@@ -12,6 +12,7 @@
         <activity android:name=".Materi3.cardviewtest_activity"></activity>
         <activity android:name=".Materi3.RecyclerActivity" />
         <activity android:name=".Materi3.ListActivity" />
+        <activity android:name=".Pertemuan4.DebuggingActivity" />
         <activity android:name=".TrackerActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".MainActivity">
