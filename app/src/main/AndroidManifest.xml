@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CRUD.AddMhsActivity"></activity>
+        <activity android:name=".CRUD.UpdateActivity"></activity>
+        <activity android:name=".CRUD.DeleteActivity" />
+        <activity android:name=".CRUD.AddMhsActivity" />
         <activity android:name=".CRUD.MahasiswaGetAllActivity" />
         <activity
             android:name=".CRUD.MainMhsActivity"
