@@ -12,19 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CRUD.UpdateActivity"></activity>
-        <activity android:name=".CRUD.DeleteActivity" />
-        <activity android:name=".CRUD.AddMhsActivity" />
-        <activity android:name=".CRUD.MahasiswaGetAllActivity" />
-        <activity
-            android:name=".CRUD.MainMhsActivity"
-            android:label="Menu CRUD Mahasiswa">
+        <activity android:name=".CRUD_Dosen.DosenGetAllActivity"></activity>
+        <activity android:name=".CRUD_Matkul.MainMatkulActivity" />
+        <activity android:name=".CRUD_Dosen.MainDosenActivity" />
+        <activity android:name=".HomeActivity2" />
+        <activity android:name=".CRUD_Dosen.AddDosenActivity" />
+        <activity android:name=".MainShareActivity" />
+        <activity android:name=".SplashActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Pertemuan6.PrefActivity" />
+        <activity android:name=".CRUD.UpdateActivity" />
+        <activity android:name=".CRUD.DeleteActivity" />
+        <activity android:name=".CRUD.AddMhsActivity" />
+        <activity android:name=".CRUD.MahasiswaGetAllActivity" />
+        <activity
+            android:name=".CRUD.MainMhsActivity"
+            android:label="Menu CRUD Mahasiswa" />
         <activity android:name=".Materi3.cardviewtest_activity" />
         <activity android:name=".Materi3.RecyclerActivity" />
         <activity android:name=".Materi3.ListActivity" />
