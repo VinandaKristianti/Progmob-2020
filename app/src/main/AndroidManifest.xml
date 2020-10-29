@@ -12,8 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CRUD_Dosen.DosenGetAllActivity"></activity>
-        <activity android:name=".CRUD_Matkul.MainMatkulActivity" />
+        <activity android:name=".CRUD_Matkul.MainMakulActivity" />
+        <activity android:name=".CRUD_Matkul.DelMatkulActivity" />
+        <activity android:name=".CRUD_Matkul.UpdateMatkulActivity" />
+        <activity android:name=".CRUD_Matkul.AddMatkulActivity" />
+        <activity android:name=".CRUD_Matkul.MatkulGetAllActivity" />
+        <activity android:name=".CRUD_Dosen.UpdateDosenActivity" />
+        <activity android:name=".CRUD_Dosen.DelDosenActivity" />
+        <activity android:name=".CRUD_Dosen.DosenGetAllActivity" />
         <activity android:name=".CRUD_Dosen.MainDosenActivity" />
         <activity android:name=".HomeActivity2" />
         <activity android:name=".CRUD_Dosen.AddDosenActivity" />

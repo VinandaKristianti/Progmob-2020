@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import retrofit2.Call;
@@ -27,8 +26,8 @@ public class UpdateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update);
 
         Button btnUpdate = (Button) findViewById(R.id.btnUpdate);
-        EditText txtNimLama = (EditText) findViewById(R.id.txtNimLama);
-        EditText txtNimUpdate = (EditText)findViewById(R.id.txtNimEdit);
+        EditText txtNimLama = (EditText) findViewById(R.id.txtNidnLama);
+        EditText txtNimUpdate = (EditText)findViewById(R.id.txtNidnEdit);
         EditText txtNamaUpdate = (EditText)findViewById(R.id.txtNamaEdit);
         EditText txtAlamatUpdate = (EditText)findViewById(R.id.txtAlamatEdit);
         EditText txtEmailUpdate = (EditText)findViewById(R.id.txtEmailEdit);
@@ -41,12 +40,17 @@ public class UpdateActivity extends AppCompatActivity {
                 pd.show();
 
                 GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
-                Call<DefaultResult> del = service.delete_mhs(
+                Call<DefaultResult> update = service.update_mhs(
                         txtNimLama.getText().toString(),
+                        txtNimUpdate.getText().toString(),
+                        txtNamaUpdate.getText().toString(),
+                        txtAlamatUpdate.getText().toString(),
+                        txtEmailUpdate.getText().toString(),
+                        "kosongkan saja",
                         "72180216"
                 );
 
-                del.enqueue(new Callback<DefaultResult>() {
+                update.enqueue(new Callback<DefaultResult>() {
                     @Override
                     public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
                         Toast.makeText(UpdateActivity.this, "Update Berhasil !", Toast.LENGTH_LONG);
@@ -59,28 +63,6 @@ public class UpdateActivity extends AppCompatActivity {
                     }
                 });
 
-                Call<DefaultResult> add= service.add_mhs(
-                        txtNimUpdate.getText().toString(),
-                        txtNamaUpdate.getText().toString(),
-                        txtAlamatUpdate.getText().toString(),
-                        txtEmailUpdate.getText().toString(),
-                        "kosongkan saja",
-                        "72180216"
-                );
-                add.enqueue(new Callback<DefaultResult>() {
-                    @Override
-                    public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
-                        pd.dismiss();
-                        Toast.makeText(UpdateActivity.this,"Update Data Berhasil !",Toast.LENGTH_LONG);
-
-                    }
-
-                    @Override
-                    public void onFailure(Call<DefaultResult> call, Throwable t) {
-                        pd.dismiss();
-                        Toast.makeText(UpdateActivity.this,"Update Gagal !",Toast.LENGTH_LONG);
-                    }
-                });
             }
         });
         

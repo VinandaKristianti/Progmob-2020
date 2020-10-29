@@ -7,7 +7,7 @@
     tools:context=".CRUD.UpdateActivity">
 
     <EditText
-        android:id="@+id/txtNimEdit"
+        android:id="@+id/txtNidnEdit"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNimLama" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNidnLama" />
 
     <EditText
         android:id="@+id/txtNamaEdit"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNimEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNidnEdit" />
 
     <EditText
         android:id="@+id/txtAlamatEdit"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAlamatEdit" />
 
     <EditText
-        android:id="@+id/txtNimLama"
+        android:id="@+id/txtNidnLama"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:ems="10"
