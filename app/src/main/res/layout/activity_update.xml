@@ -7,15 +7,16 @@
     tools:context=".CRUD.UpdateActivity">
 
     <EditText
-        android:id="@+id/txtNidnEdit"
+        android:id="@+id/txtNimEdit"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="NIM baru"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNidnLama" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNimLama" />
 
     <EditText
         android:id="@+id/txtNamaEdit"
@@ -23,10 +24,11 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Nama"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNidnEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNimEdit" />
 
     <EditText
         android:id="@+id/txtAlamatEdit"
@@ -34,6 +36,7 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Alamat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,17 +48,19 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAlamatEdit" />
 
     <EditText
-        android:id="@+id/txtNidnLama"
+        android:id="@+id/txtNimLama"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="NIM lama"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

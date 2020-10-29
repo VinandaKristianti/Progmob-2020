@@ -26,8 +26,8 @@ public class UpdateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update);
 
         Button btnUpdate = (Button) findViewById(R.id.btnUpdate);
-        EditText txtNimLama = (EditText) findViewById(R.id.txtNidnLama);
-        EditText txtNimUpdate = (EditText)findViewById(R.id.txtNidnEdit);
+        EditText txtNimLama = (EditText) findViewById(R.id.txtNimLama);
+        EditText txtNimUpdate = (EditText)findViewById(R.id.txtNimEdit);
         EditText txtNamaUpdate = (EditText)findViewById(R.id.txtNamaEdit);
         EditText txtAlamatUpdate = (EditText)findViewById(R.id.txtAlamatEdit);
         EditText txtEmailUpdate = (EditText)findViewById(R.id.txtEmailEdit);
