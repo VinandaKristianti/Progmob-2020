@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/txtNimEdit"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="NIM baru"
@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/txtNamaEdit"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nama"
@@ -33,7 +33,7 @@
     <EditText
         android:id="@+id/txtAlamatEdit"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Alamat"
@@ -45,7 +45,7 @@
     <EditText
         android:id="@+id/txtEmailEdit"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email"
@@ -57,7 +57,7 @@
     <EditText
         android:id="@+id/txtNimLama"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="NIM lama"
@@ -68,12 +68,12 @@
 
     <Button
         android:id="@+id/btnUpdate"
-        android:layout_width="408dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="80dp"
         android:text="update"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmailEdit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
